@@ -1,0 +1,211 @@
+:root {
+    --main-color: #40798C;
+    --secondary-color: #8A9DA2;
+    --background-color: #F4F4F4;
+    --accent-color: #ff5722;
+    --text-color: #212121;
+    --low-skill-color: #e74c3c;
+    --medium-skill-color: #f1c40f;
+    --high-skill-color: #27ae60;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--main-color);
+    text-align: center;
+    color: white;
+    border-bottom: var(--accent-color) 3px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.download-button:hover {
+    background-color: #e64a19;
+    color: white;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-bar {
+    background-color: #eee;
+    position: relative;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.skill-bar span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-bar div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-content {
+        order: 1;
+        margin-bottom: 1rem;
+    }
+
+    .download-button {
+        order: 2;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Projets réalisés */
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.project-link {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+.project-link i {
+    margin-left: 0.25rem;
+}
+
+/* Flèche pour remonter en haut du CV */
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--main-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: var(--accent-color);
+}
+
+@keyframes back-to-top-animation {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+#back-to-top.show {
+    animation: back-to-top-animation 1s infinite;
+}
+
+.back-to-top:hover {
+    background-color: #2e5366;
+}
