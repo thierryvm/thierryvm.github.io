@@ -1,122 +1,901 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV de Thierry Vanmeeteren</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/6en8XCp+HHAAK5GSLf2xlYtvJ8U2Q4U+9cuEnJoa3" crossorigin="anonymous">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#059669" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0f0d" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<title>Thierry Vanmeeteren — Chauffeur de bus-car · Autodidacte développement web et IA</title>
+<meta name="description" content="Thierry Vanmeeteren, chauffeur de bus-car aux Autobus Liégeois (TEC/Keolis), en incapacité de travail longue durée. Autodidacte en développement web et IA à titre d'activité cognitive et thérapeutique. Projets personnels : TerminalLearning, Ankora.">
+<meta name="author" content="Thierry Vanmeeteren">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://thierryvm.github.io/">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Thierry Vanmeeteren — CV">
+<meta property="og:description" content="Chauffeur de bus-car · Autodidacte en développement web et IA · Région liégeoise, Belgique">
+<meta property="og:url" content="https://thierryvm.github.io/">
+<meta property="og:locale" content="fr_BE">
+<meta property="profile:first_name" content="Thierry">
+<meta property="profile:last_name" content="Vanmeeteren">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Thierry Vanmeeteren — CV">
+<meta name="twitter:description" content="Chauffeur de bus-car · Autodidacte en développement web et IA">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23059669'/%3E%3Ctext x='50' y='68' font-family='Inter,system-ui,sans-serif' font-size='56' font-weight='700' fill='white' text-anchor='middle'%3ETv%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Thierry Vanmeeteren",
+  "givenName": "Thierry",
+  "familyName": "Vanmeeteren",
+  "jobTitle": "Chauffeur de bus-car",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Autobus Liégeois (TEC/Keolis)"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Liège",
+    "addressCountry": "BE"
+  },
+  "url": "https://thierryvm.github.io/",
+  "sameAs": [
+    "https://github.com/thierryvm",
+    "https://www.linkedin.com/in/thierry-vanmeeteren-bb202a113/"
+  ],
+  "knowsLanguage": ["fr", "en"],
+  "knowsAbout": [
+    "TypeScript",
+    "Next.js",
+    "React",
+    "Tauri",
+    "Supabase",
+    "AI-augmented coding"
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --emerald-50: #ecfdf5;
+    --emerald-100: #d1fae5;
+    --emerald-400: #34d399;
+    --emerald-500: #10b981;
+    --emerald-600: #059669;
+    --emerald-700: #047857;
+    --emerald-800: #065f46;
+    --emerald-900: #064e3b;
+
+    --bg: #ffffff;
+    --bg-elevated: #fafaf9;
+    --bg-subtle: #f5f5f4;
+    --fg: #18181b;
+    --fg-muted: #52525b;
+    --fg-subtle: #71717a;
+    --border: #e7e5e4;
+    --border-strong: #d6d3d1;
+    --accent: var(--emerald-600);
+    --accent-fg: #ffffff;
+    --accent-bg-soft: var(--emerald-50);
+    --accent-fg-soft: var(--emerald-800);
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+
+    --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+    --max-width: 72ch;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.04);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.06), 0 2px 4px -2px rgb(0 0 0 / 0.04);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a0f0d;
+      --bg-elevated: #111817;
+      --bg-subtle: #1a201f;
+      --fg: #f4f4f5;
+      --fg-muted: #a1a1aa;
+      --fg-subtle: #71717a;
+      --border: #27272a;
+      --border-strong: #3f3f46;
+      --accent: var(--emerald-400);
+      --accent-bg-soft: rgba(16, 185, 129, 0.12);
+      --accent-fg-soft: var(--emerald-100);
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.65;
+    font-feature-settings: 'cv11', 'ss01';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection { background: var(--accent); color: var(--accent-fg); }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;
+  }
+  a:hover { border-bottom-color: var(--accent); }
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
+  h1, h2, h3, h4 { line-height: 1.25; margin: 0; }
+  h1 { font-size: clamp(1.875rem, 4vw, 2.5rem); font-weight: 700; letter-spacing: -0.02em; }
+  h2 { font-size: 1.375rem; font-weight: 600; letter-spacing: -0.01em; }
+  h3 { font-size: 1.0625rem; font-weight: 600; }
+  h4 { font-size: 0.9375rem; font-weight: 600; }
+
+  p { margin: 0; }
+
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: var(--accent);
+    color: var(--accent-fg);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    z-index: 100;
+  }
+  .skip-link:focus { left: 1rem; top: 1rem; }
+
+  .wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--space-12) var(--space-6);
+  }
+
+  header.hero {
+    background: linear-gradient(180deg, var(--accent-bg-soft) 0%, transparent 100%);
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-8);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero-grid {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    align-items: center;
+  }
+
+  @media (min-width: 640px) {
+    .hero-grid {
+      grid-template-columns: 1fr auto;
+      gap: var(--space-8);
+    }
+  }
+
+  .hero-text { display: flex; flex-direction: column; gap: var(--space-3); min-width: 0; }
+  .hero-tagline {
+    color: var(--accent-fg-soft);
+    background: var(--accent-bg-soft);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-md);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    align-self: flex-start;
+    letter-spacing: 0.01em;
+  }
+  .hero-subtitle {
+    font-size: 1.125rem;
+    color: var(--fg-muted);
+    font-weight: 400;
+  }
+  .hero-meta {
+    color: var(--fg-subtle);
+    font-size: 0.875rem;
+    margin-top: var(--space-2);
+  }
+
+  .avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--bg);
+    box-shadow: 0 0 0 1px var(--border-strong), var(--shadow-md);
+    justify-self: center;
+  }
+
+  @media (min-width: 640px) {
+    .avatar { width: 144px; height: 144px; }
+  }
+
+  .actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-4); }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: 0.625rem 1.125rem;
+    border-radius: var(--radius-md);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-family: inherit;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: var(--accent-fg);
+    border-color: var(--accent);
+  }
+  .btn-primary:hover { background: var(--emerald-700); border-color: var(--emerald-700); border-bottom-color: var(--emerald-700); }
+  .btn-secondary {
+    background: transparent;
+    color: var(--fg);
+    border-color: var(--border-strong);
+  }
+  .btn-secondary:hover { background: var(--bg-subtle); border-bottom-color: var(--border-strong); }
+
+  main { padding-bottom: var(--space-16); }
+
+  section { margin: var(--space-12) 0; }
+  section:first-of-type { margin-top: var(--space-8); }
+
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-3);
+    border-bottom: 1px solid var(--border);
+  }
+  .section-title-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: var(--radius-sm);
+    background: var(--accent-bg-soft);
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .section-title-icon svg { width: 16px; height: 16px; }
+
+  .about-block {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    margin-bottom: var(--space-4);
+  }
+  .about-block p + p { margin-top: var(--space-3); }
+  .about-block strong { color: var(--fg); font-weight: 600; }
+
+  .current-role {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-4);
+    padding: var(--space-4) 0;
+  }
+  .role-marker {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+    margin-top: 0.6em;
+    box-shadow: 0 0 0 4px var(--accent-bg-soft);
+  }
+  .role-body { flex: 1; min-width: 0; }
+  .role-title { font-weight: 600; font-size: 1rem; color: var(--fg); }
+  .role-org { color: var(--fg-muted); font-size: 0.9375rem; margin-top: var(--space-1); }
+  .role-status {
+    display: inline-block;
+    margin-top: var(--space-2);
+    padding: 0.1875rem 0.625rem;
+    border-radius: 999px;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border);
+    color: var(--fg-muted);
+    font-size: 0.8125rem;
+  }
+
+  .projects { display: grid; gap: var(--space-4); }
+  .project {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .project:hover { border-color: var(--border-strong); }
+  .project-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-bottom: var(--space-3);
+  }
+  .project-title { font-size: 1.0625rem; font-weight: 600; color: var(--fg); }
+  .project-status {
+    font-size: 0.75rem;
+    padding: 0.1875rem 0.5rem;
+    border-radius: var(--radius-sm);
+    background: var(--accent-bg-soft);
+    color: var(--accent-fg-soft);
+    font-weight: 500;
+  }
+  .project-desc { color: var(--fg-muted); font-size: 0.9375rem; line-height: 1.6; }
+  .project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+  }
+  .stack-chip {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    padding: 0.1875rem 0.5rem;
+    border-radius: var(--radius-sm);
+    background: var(--bg-subtle);
+    border: 1px solid var(--border);
+    color: var(--fg-muted);
+  }
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    margin-top: var(--space-4);
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  .project-link svg { width: 14px; height: 14px; }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+  @media (min-width: 640px) {
+    .skills-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .skill-group h3 {
+    margin-bottom: var(--space-3);
+    color: var(--fg);
+  }
+  .skill-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--space-2); }
+  .skill-list li {
+    color: var(--fg-muted);
+    font-size: 0.9375rem;
+    padding-left: var(--space-4);
+    position: relative;
+  }
+  .skill-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 6px;
+    height: 1.5px;
+    background: var(--accent);
+    border-radius: 1px;
+  }
+
+  .timeline { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--space-3); }
+  .timeline li {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    gap: var(--space-4);
+    align-items: baseline;
+    padding: var(--space-2) 0;
+  }
+  .timeline-date {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    color: var(--fg-subtle);
+    font-weight: 500;
+    text-align: right;
+  }
+  .timeline-content {
+    color: var(--fg-muted);
+    font-size: 0.9375rem;
+  }
+  .timeline-content strong { color: var(--fg); font-weight: 600; }
+
+  @media (max-width: 480px) {
+    .timeline li { grid-template-columns: 1fr; gap: var(--space-1); }
+    .timeline-date { text-align: left; }
+  }
+
+  .formation-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--space-3); }
+  .formation-list li {
+    padding-left: var(--space-4);
+    border-left: 2px solid var(--border);
+    color: var(--fg-muted);
+    font-size: 0.9375rem;
+  }
+  .formation-list li strong { color: var(--fg); font-weight: 600; display: block; margin-bottom: var(--space-1); }
+  .formation-list li em { color: var(--fg-subtle); font-style: normal; font-size: 0.8125rem; }
+
+  .langues { display: flex; flex-wrap: wrap; gap: var(--space-4); }
+  .langue {
+    flex: 1;
+    min-width: 200px;
+    padding: var(--space-4);
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+  .langue-name { font-weight: 600; color: var(--fg); margin-bottom: var(--space-1); }
+  .langue-level { color: var(--fg-muted); font-size: 0.875rem; }
+
+  footer {
+    margin-top: var(--space-16);
+    padding: var(--space-8) var(--space-6);
+    background: var(--bg-elevated);
+    border-top: 1px solid var(--border);
+  }
+  .footer-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  @media (min-width: 640px) {
+    .footer-content { flex-direction: row; justify-content: space-between; align-items: center; }
+  }
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    font-size: 0.9375rem;
+    color: var(--fg-muted);
+  }
+  .contact-list a { color: var(--fg); }
+  .contact-list a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .contact-row { display: flex; align-items: center; gap: var(--space-2); }
+  .contact-row svg { width: 16px; height: 16px; color: var(--fg-subtle); flex-shrink: 0; }
+  .footer-meta {
+    font-size: 0.8125rem;
+    color: var(--fg-subtle);
+    text-align: right;
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--accent-fg);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 10;
+  }
+  .back-to-top.visible { opacity: 1; pointer-events: auto; }
+  .back-to-top:hover { background: var(--emerald-700); }
+  .back-to-top:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+  .back-to-top svg { width: 20px; height: 20px; }
+
+  @media print {
+    :root {
+      --bg: #ffffff;
+      --bg-elevated: #ffffff;
+      --bg-subtle: #f5f5f5;
+      --fg: #18181b;
+      --fg-muted: #3f3f46;
+      --fg-subtle: #52525b;
+      --border: #d4d4d8;
+      --accent: #047857;
+      --accent-fg-soft: #064e3b;
+      --accent-bg-soft: #ecfdf5;
+    }
+    body { font-size: 11pt; line-height: 1.5; }
+    .wrap, .hero-grid, .footer-content { max-width: 100%; padding-left: 0; padding-right: 0; }
+    header.hero { background: none; padding: 1rem 0; border-bottom: 2px solid var(--accent); }
+    .actions, .back-to-top, .btn { display: none !important; }
+    section { margin: 1.5rem 0; page-break-inside: avoid; }
+    .project, .about-block, .langue { page-break-inside: avoid; }
+    footer { background: none; border-top: 2px solid var(--accent); margin-top: 2rem; }
+    a { color: var(--fg); border-bottom: none; }
+    a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; color: var(--fg-subtle); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+    html { scroll-behavior: auto; }
+  }
+</style>
 </head>
 <body>
-    <header>
-    <div class="header-content">
-        <h1>Chauffeur de bus - Développeur Web en devenir</h1>
-        <p>Chauffeur de bus en reconversion</p>
-        <a href="assets/Thierry_Vanmeeteren_CV.pdf" download="Thierry_Vanmeeteren_CV.pdf" class="download-button">Télécharger CV en PDF <i class="fas fa-file-download"></i></a>
+
+<a href="#main" class="skip-link">Aller au contenu principal</a>
+
+<header class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <span class="hero-tagline">Région liégeoise, Belgique 🇧🇪</span>
+      <h1>Thierry Vanmeeteren</h1>
+      <p class="hero-subtitle">Chauffeur de bus-car · Autodidacte en développement web et IA</p>
+      <p class="hero-meta">Activité cognitive et thérapeutique pendant période d'arrêt médical</p>
+      <div class="actions">
+        <button onclick="window.print()" class="btn btn-primary" aria-label="Télécharger ce CV en PDF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Télécharger en PDF
+        </button>
+        <a href="https://github.com/thierryvm" class="btn btn-secondary" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
     </div>
-    <div class="profile-image">
-    <img src="./images/portrait_CV.JPEG" alt="Thierry Vanmeeteren">
-    </div>
+    <img class="avatar" src="./images/portrait_CV.JPEG" alt="Portrait de Thierry Vanmeeteren" width="144" height="144">
+  </div>
 </header>
 
-    <main>
-        <section>
-            <h2><i class="fas fa-briefcase"></i> Expériences professionnelles</h2>
-            <ul>
-                <li>Chauffeur de bus - Autobus Liégeois/Keolis (2019 - présent)</li>
-                <li>Plongeur (lave-vaisselle) - PIZZERIA LA BOTTEGA (2016 - 2017)</li>
-                <li>Opérateur inbound - BIK Interim / WBCC (2015 - 2016)</li>
-                <li>Technicien de maintenance en informatique - ADECCO -> DREVER (2013 - 2014)</li>
-                <li>Chauffeur livreur - Angelina Traiteur (2010)</li>
-                <li>Chauffeur livreur - Maison du Frein (2009 - 2010)</li>
-                <li>Aide-ménager - Creyf's / BHT (2005)</li>
-                <li>Réassortisseur - CHEZ NAT (2002 - 2003)</li>
-                <li>Educateur - A.C. FLERON (2000 - 2001)</li>
-                <li>Equipier polyvalent de restauration - BACKERIE DE LILLE (1996 - 1997)</li>
-                <li>Réassortisseur - ENTREPRISE GEUNIS (1996)</li>
-            </ul>
-        </section>
-        <section>
-            <h2><i class="fas fa-graduation-cap"></i> Formations</h2>
-            <ul>
-                <li>Formation permis D + CAP - Forem (2018)</li>
-                <li>Formation agent help desk (utilisation SAP) (2015)</li>
-                <li>Formation de soudeur arc, semi et TIG (2009)</li>
-                <li>Formation autodidacte en programmation de sites web, HTML5/CSS3, Dreamweaver (2008)</li>
-                <li>Lycée d'état de Beyne-Heusay, Qualification menuisier (1996)</li>
-            </ul>
-        </section>
-        <section>
-            <h2><i class="fas fa-language"></i> Langues</h2>
-            <ul>
-                <li>Français - Langue maternelle</li>
-                <li>Anglais - Notions de base</li>
-            </ul>
-        </section>
-        <section>
-            <h2><i class="fas fa-laptop-code"></i> Connaissances informatiques</h2>
-            <ul>
-                <li>Bonne connaissance de Windows et Office, notions de Mac Os et Linux</li>
-                <li>Assemblage, installation, dépannage de PC, imprimantes et autres périphériques</li>
-                <li>Notions de base réseau</li>
-                <li>Notions de programmation en C, C++, HTML5-CSS3, WordPress (création site web)</li>
-                <li>Formation autodidacte en 3D (Blender, Maya, Modo, Houdini, Cinema 4D)</li>
-            </ul>
-            <div class="skill">
-                <h4>Windows et Office</h4>
-                <div class="skill-bar" data-skill="70">
-                    <span></span>
-                </div>
-            </div>
-            <div class="skill">
-                <h4>Programmation web (HTML/CSS/JavaScript)</h4>
-                <div class="skill-bar" data-skill="50">
-                    <span></span>
-                </div>
-            </div>            
-            <div class="skill">
-                <h4>WordPress</h4>
-                <div class="skill-bar" data-skill="45">
-                    <span></span>
-                </div>
-            </div>
-        </section>
+<main id="main">
+<div class="wrap">
 
-        <!-- Ajoutez cette section après la section "Connaissances informatiques" -->
-        <section>
-            <h2><i class="fas fa-project-diagram"></i> Projets réalisés</h2>
-            <div class="project">
-                <h4>Les CKC de la Vallée des Awirs</h4>
-                <p>Site web réalisé avec WordPress pour un éleveur particulier.</p>
-                <a href="https://www.lesckcdelavalleedesawirs.com/" target="_blank" class="project-link">Visiter le site <i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <div class="project">
-                <h4>Airsoft Aywaille</h4>
-                <p>Site web réalisé avec WordPress pour une boutique d'airsoft.</p>
-                <a href="https://www.airsoft-aywaille.be/" target="_blank" class="project-link">Visiter le site <i class="fas fa-external-link-alt"></i></a>
-            </div>
-        </section>
+<section aria-labelledby="about-title">
+  <h2 id="about-title" class="section-title">
+    <span class="section-title-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+    </span>
+    À propos
+  </h2>
+  <div class="about-block">
+    <p>Chauffeur de bus-car aux <strong>Autobus Liégeois (TEC/Keolis)</strong> depuis 2019, actuellement en <strong>incapacité de travail longue durée</strong> pour raisons médicales.</p>
+    <p>Je consacre cette période d'arrêt à une activité <strong>cognitive et thérapeutique</strong> autour du développement web et des outils d'intelligence artificielle. Mes projets personnels — comme la plateforme pédagogique open source <strong>TerminalLearning</strong> — sont des supports d'apprentissage autodidacte et <strong>non une activité professionnelle</strong>.</p>
+    <p>À terme, et dans un cadre médicalement adapté avec l'accord de mon médecin-conseil, j'envisage une éventuelle reconversion vers le développement web si ma santé le permet.</p>
+  </div>
+</section>
 
-    </main>
-    <footer>
-        <p>
-            Adresse : Rue du fossé, 84 - 4400 Flémalle, Belgique<br>
-            GSM : 0497/85.93.11<br>
-            E-mail : thierryvm@hotmail.com
-        </p>
-    </footer>
+<section aria-labelledby="current-title">
+  <h2 id="current-title" class="section-title">
+    <span class="section-title-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="7" cy="18" r="1.5"/><circle cx="17" cy="18" r="1.5"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+    </span>
+    Situation professionnelle actuelle
+  </h2>
+  <div class="current-role">
+    <span class="role-marker" aria-hidden="true"></span>
+    <div class="role-body">
+      <div class="role-title">Chauffeur de bus-car</div>
+      <div class="role-org">Autobus Liégeois (TEC/Keolis) · Belgique · 2019 – présent</div>
+      <span class="role-status">En incapacité de travail longue durée pour raisons médicales</span>
+    </div>
+  </div>
+</section>
 
-    <!-- Ajoutez ce code juste avant la balise </body> -->
-    <a href="#" id="back-to-top" class="back-to-top" title="Retour en haut"><i class="fas fa-arrow-up"></i></a>
+<section aria-labelledby="projects-title">
+  <h2 id="projects-title" class="section-title">
+    <span class="section-title-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+    </span>
+    Projets personnels d'apprentissage
+  </h2>
+  <p style="color: var(--fg-muted); margin-bottom: var(--space-4); font-size: 0.9375rem;">
+    Activités autodidactes à finalité pédagogique et thérapeutique, non commerciales.
+  </p>
+  <div class="projects">
 
-    <script src="js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.3/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
-    <script src="js/pdf.js"></script>
+    <article class="project">
+      <div class="project-header">
+        <h3 class="project-title">TerminalLearning</h3>
+        <span class="project-status">En cours · Open source</span>
+      </div>
+      <p class="project-desc">
+        Plateforme pédagogique gratuite et open source pour apprendre le terminal sous Linux, macOS et Windows. Inclut un tuteur IA intégré pour guider les débutants pas à pas dans leur découverte de la ligne de commande. Projet d'apprentissage personnel à finalité éducative, non commercial.
+      </p>
+      <div class="project-stack">
+        <span class="stack-chip">Next.js 16</span>
+        <span class="stack-chip">TypeScript</span>
+        <span class="stack-chip">Tailwind CSS</span>
+        <span class="stack-chip">Supabase</span>
+        <span class="stack-chip">IA tutorat</span>
+      </div>
+      <a href="https://terminallearning.dev/" target="_blank" rel="noopener" class="project-link">
+        Visiter terminallearning.dev
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </article>
+
+    <article class="project">
+      <div class="project-header">
+        <h3 class="project-title">Ankora</h3>
+        <span class="project-status">En développement · Non commercialisé</span>
+      </div>
+      <p class="project-desc">
+        Application web personnelle (PWA) d'organisation budgétaire pour particuliers belges. Modèle d'enveloppes prédictif sans connexion bancaire, hébergement européen, conforme RGPD. Projet d'apprentissage de l'architecture web moderne et de la sécurité des données.
+      </p>
+      <div class="project-stack">
+        <span class="stack-chip">Next.js 16</span>
+        <span class="stack-chip">Supabase</span>
+        <span class="stack-chip">PostgreSQL RLS</span>
+        <span class="stack-chip">Decimal.js</span>
+        <span class="stack-chip">RGPD by design</span>
+      </div>
+      <a href="https://ankora.be/" target="_blank" rel="noopener" class="project-link">
+        Visiter ankora.be
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </article>
+
+  </div>
+</section>
+
+<section aria-labelledby="skills-title">
+  <h2 id="skills-title" class="section-title">
+    <span class="section-title-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+    </span>
+    Compétences techniques acquises en autodidacte
+  </h2>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <h3>Développement web</h3>
+      <ul class="skill-list">
+        <li>TypeScript strict, JavaScript moderne (ES2024+)</li>
+        <li>React 19, Next.js 16 (App Router, Server Components, Server Actions)</li>
+        <li>Tailwind CSS 4</li>
+        <li>HTML5 sémantique, accessibilité WCAG 2.2 AA</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <h3>Backend &amp; données</h3>
+      <ul class="skill-list">
+        <li>Supabase (PostgreSQL, Row Level Security, Auth, Storage)</li>
+        <li>API REST, Server Actions, validation Zod</li>
+        <li>Node.js, runtime moderne</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <h3>Desktop cross-platform</h3>
+      <ul class="skill-list">
+        <li>Tauri 2 (Rust + TypeScript)</li>
+        <li>Notions de Rust stable</li>
+        <li>Intégration native système (Windows, macOS, Linux)</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <h3>Méthodologie &amp; outils</h3>
+      <ul class="skill-list">
+        <li>Git, GitHub (Actions, branch protection, conventional commits)</li>
+        <li>CI/CD (Vitest, Playwright, Lighthouse CI)</li>
+        <li>ADR, DoD rigoureuses, sécurité by-default</li>
+        <li>RGPD awareness, OWASP, secrets en variables d'environnement</li>
+      </ul>
+    </div>
+    <div class="skill-group" style="grid-column: 1 / -1;">
+      <h3>Orchestration IA · AI-augmented coding</h3>
+      <ul class="skill-list">
+        <li>Claude Code, Cursor, Cowork desktop</li>
+        <li>MCP (Model Context Protocol) servers</li>
+        <li>Pilotage d'agents IA pour livrer du code en pratiquant l'architecture et la revue critique</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="formations-title">
+  <h2 id="formations-title" class="section-title">
+    <span class="section-title-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+    </span>
+    Formations
+  </h2>
+  <ul class="formation-list">
+    <li>
+      <strong>Programmation web autodidacte</strong>
+      <em>2008 – présent · Apprentissage continu</em>
+    </li>
+    <li>
+      <strong>Permis D + CAP transport voyageurs</strong>
+      <em>2018 · Forem</em>
+    </li>
+    <li>
+      <strong>Agent help desk (utilisation SAP)</strong>
+      <em>2015 · Formation professionnelle</em>
+    </li>
+    <li>
+      <strong>Soudeur arc, semi et TIG</strong>
+      <em>2009 · Formation professionnelle</em>
+    </li>
+    <li>
+      <strong>Qualification menuisier</strong>
+      <em>1996 · Lycée d'État de Beyne-Heusay</em>
+    </li>
+  </ul>
+</section>
+
+<section aria-labelledby="langues-title">
+  <h2 id="langues-title" class="section-title">
+    <span class="section-title-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+    </span>
+    Langues
+  </h2>
+  <div class="langues">
+    <div class="langue">
+      <div class="langue-name">Français</div>
+      <div class="langue-level">Langue maternelle</div>
+    </div>
+    <div class="langue">
+      <div class="langue-name">Anglais</div>
+      <div class="langue-level">Lecture de documentation technique · Communication écrite basique</div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="experience-title">
+  <h2 id="experience-title" class="section-title">
+    <span class="section-title-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+    </span>
+    Parcours professionnel antérieur
+  </h2>
+  <ul class="timeline">
+    <li>
+      <span class="timeline-date">2016 – 2017</span>
+      <span class="timeline-content"><strong>Plongeur</strong> · Pizzeria La Bottega</span>
+    </li>
+    <li>
+      <span class="timeline-date">2015 – 2016</span>
+      <span class="timeline-content"><strong>Opérateur inbound</strong> · BIK Interim / WBCC</span>
+    </li>
+    <li>
+      <span class="timeline-date">2013 – 2014</span>
+      <span class="timeline-content"><strong>Technicien maintenance informatique</strong> · ADECCO → DREVER</span>
+    </li>
+    <li>
+      <span class="timeline-date">2009 – 2010</span>
+      <span class="timeline-content"><strong>Chauffeur livreur</strong> · Maison du Frein</span>
+    </li>
+    <li>
+      <span class="timeline-date">2010</span>
+      <span class="timeline-content"><strong>Chauffeur livreur</strong> · Angelina Traiteur</span>
+    </li>
+    <li>
+      <span class="timeline-date">2005</span>
+      <span class="timeline-content"><strong>Aide-ménager</strong> · Creyf's / BHT</span>
+    </li>
+    <li>
+      <span class="timeline-date">2002 – 2003</span>
+      <span class="timeline-content"><strong>Réassortisseur</strong> · Chez Nat</span>
+    </li>
+    <li>
+      <span class="timeline-date">2000 – 2001</span>
+      <span class="timeline-content"><strong>Éducateur</strong> · A.C. Fléron</span>
+    </li>
+    <li>
+      <span class="timeline-date">1996 – 1997</span>
+      <span class="timeline-content"><strong>Équipier de restauration</strong> · Bakerie de Lille</span>
+    </li>
+    <li>
+      <span class="timeline-date">1996</span>
+      <span class="timeline-content"><strong>Réassortisseur</strong> · Entreprise Geunis</span>
+    </li>
+  </ul>
+</section>
+
+</div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="contact-list">
+      <div class="contact-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Région liégeoise, Belgique</span>
+      </div>
+      <div class="contact-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <a href="#" id="email-link" data-u="dGhpZXJyeXZt" data-d="aG90bWFpbC5jb20" aria-label="M'envoyer un email">Me contacter par email</a>
+      </div>
+      <div class="contact-row">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        <a href="https://github.com/thierryvm" target="_blank" rel="noopener">github.com/thierryvm</a>
+      </div>
+      <div class="contact-row">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <a href="https://www.linkedin.com/in/thierry-vanmeeteren-bb202a113/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <p style="margin: 0;">Dernière mise à jour : mai 2026</p>
+      <p style="margin: var(--space-1) 0 0;">CV statique · GitHub Pages</p>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" class="back-to-top" aria-label="Retour en haut de page">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<script>
+  (function() {
+    var emailLink = document.getElementById('email-link');
+    if (emailLink) {
+      var u = atob(emailLink.dataset.u);
+      var d = atob(emailLink.dataset.d);
+      var email = u + '@' + d;
+      emailLink.href = 'mailto:' + email;
+      emailLink.textContent = email;
+    }
+
+    var btn = document.getElementById('back-to-top');
+    if (btn) {
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 600) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+      }, { passive: true });
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+  })();
+</script>
 
 </body>
 </html>
-
